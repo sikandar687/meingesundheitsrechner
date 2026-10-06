@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "ratgeber";
   data: InferEntrySchema<"ratgeber">
 } & { render(): Render[".md"] };
+"keine-ergebnisse-beim-training.md": {
+	id: "keine-ergebnisse-beim-training.md";
+  slug: "keine-ergebnisse-beim-training";
+  body: string;
+  collection: "ratgeber";
+  data: InferEntrySchema<"ratgeber">
+} & { render(): Render[".md"] };
 };
 
 	};
