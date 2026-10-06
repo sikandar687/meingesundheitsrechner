@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+// Safely fetch all posts from your collection
+const posts = await getCollection('ratgeber') || [];
+---
+
+<Layout title="Ratgeber & Artikel">
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-8">Ratgeber Übersicht</h1>
+    
+    <div class="space-y-6">
+      {posts.map((post) => (
+        <article class="p-6 bg-white rounded-lg shadow border">
+          <h2 class="text-xl font-semibold mb-2">
+            <a href={`/ratgeber/${post.slug}`} class="text-blue-600 hover:underline">
+              {post.data.title}
+            </a>
+          </h2>
+          {post.data.description && <p class="text-gray-600">{post.data.description}</p>}
+        </article>
+      ))}
+    </div>
+  </main>
+</Layout>

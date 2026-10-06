@@ -1,0 +1,65 @@
+---
+// src/layouts/Layout.astro
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { 
+  title, 
+  description, 
+  image = '/favicon.svg' // Fallback preview image 
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://meingesundheitsrechner.de');
+const socialImageURL = new URL(image, Astro.site || 'https://meingesundheitsrechner.de');
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="MeinGesundheitsrechner.de" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:image" content={socialImageURL} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageURL} />
+
+    <!-- SoftwareApplication / Calculator Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MeinGesundheitsrechner.de",
+        "url": "https://meingesundheitsrechner.de",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between font-sans">
+    <slot />
+  </body>
+</html>

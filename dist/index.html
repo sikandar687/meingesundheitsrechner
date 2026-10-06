@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="de"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MeinGesundheitsrechner.de — Kostenlose Gesundheits- &amp; Fitness-Rechner</title><meta name="description" content="Berechnen Sie BMI, Kalorien, Körperfett, TDEE, Makronährstoffe und mehr mit unseren präzisen Rechnern nach medizinischen Standards."><link rel="canonical" href="https://meingesundheitsrechner.de/"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Open Graph / Facebook / WhatsApp --><meta property="og:title" content="MeinGesundheitsrechner.de — Kostenlose Gesundheits- &#38; Fitness-Rechner"><meta property="og:description" content="Berechnen Sie BMI, Kalorien, Körperfett, TDEE, Makronährstoffe und mehr mit unseren präzisen Rechnern nach medizinischen Standards."><meta property="og:type" content="website"><meta property="og:url" content="https://meingesundheitsrechner.de/"><meta property="og:site_name" content="MeinGesundheitsrechner.de"><meta property="og:locale" content="de_DE"><meta property="og:image" content="https://meingesundheitsrechner.de/favicon.svg"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MeinGesundheitsrechner.de — Kostenlose Gesundheits- &#38; Fitness-Rechner"><meta name="twitter:description" content="Berechnen Sie BMI, Kalorien, Körperfett, TDEE, Makronährstoffe und mehr mit unseren präzisen Rechnern nach medizinischen Standards."><meta name="twitter:image" content="https://meingesundheitsrechner.de/favicon.svg"><!-- SoftwareApplication / Calculator Schema Markup --><script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MeinGesundheitsrechner.de",
+        "url": "https://meingesundheitsrechner.de",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      }
+    </script><link rel="stylesheet" href="/_astro/index.BCZJQ_dC.css"></head> <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between font-sans">  <div class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between font-sans"> <!-- HEADER --> <header class="bg-white border-b border-slate-200 sticky top-0 z-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"> <div class="flex items-center space-x-3"> <!-- Favicon / Logo Image --> <a href="/" class="flex items-center p-1.5 bg-emerald-50 border border-emerald-100 rounded-lg shadow-sm hover:bg-emerald-100 transition"> <img src="/favicon.svg" alt="MeinGesundheitsrechner.de Logo" class="h-6 w-6 object-contain text-emerald-600"> </a> <span class="font-bold text-base tracking-tight text-slate-900">MeinGesundheitsrechner<span class="text-slate-400">.de</span></span> </div> <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600"> <a href="/#computer" class="hover:text-emerald-600 transition">Rechner</a> <a href="/#counselor" class="hover:text-emerald-600 transition">Ratgeber</a> <a href="/#contact" class="hover:text-emerald-600 transition">Kontakt</a> </nav> </div> </header> <!-- HERO / H1 SECTION FOR SEO --> <section class="bg-white border-b border-slate-200 py-10 px-4 sm:px-6 lg:px-8 text-center"> <div class="max-w-4xl mx-auto space-y-4"> <span class="text-xs font-bold uppercase tracking-widest bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Medizinische Standards & Fitness</span> <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+Wissenschaftliche Gesundheits- und Fitnessrechner
+</h1> <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+Ermitteln Sie Ihren Body-Mass-Index, Kalorienbedarf, Körperfettanteil und Makronährstoffe schnell, kostenlos und präzise.
+</p> </div> </section> <!-- MAIN CONTAINER --> <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full grid grid-cols-1 lg:grid-cols-4 gap-8"> <!-- SIDEBAR WITH ALL 13 CALCULATORS --> <aside class="lg:col-span-1 space-y-4"> <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-100 max-h-[75vh] overflow-y-auto"> <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-3 mb-3">Kategorien & Rechner</h3> <nav class="space-y-1 text-xs"> <button onclick="switchTab('bmi')" id="btn-bmi" class="w-full text-left px-3 py-2 rounded-xl font-medium bg-emerald-50/80 text-emerald-700 transition flex items-center justify-between"> <span>1. BMI Rechner</span> <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Top</span> </button> <button onclick="switchTab('calorie')" id="btn-calorie" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">2. Kalorienrechner</button> <button onclick="switchTab('bodyfat')" id="btn-bodyfat" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">3. Körperfettrechner</button> <button onclick="switchTab('bmr')" id="btn-bmr" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">4. Grundumsatz (BMR) Rechner</button> <button onclick="switchTab('ideal')" id="btn-ideal" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">5. Idealgepäck / Idealgewicht</button> <button onclick="switchTab('pace')" id="btn-pace" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">6. Lauf-Pace Rechner</button> <button onclick="switchTab('pregnancy')" id="btn-pregnancy" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">7. Schwangerschaftsrechner</button> <button onclick="switchTab('conception')" id="btn-conception" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">8. Empfängnisrechner</button> <button onclick="switchTab('duedate')" id="btn-duedate" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">9. Geburtstermin-Rechner</button> <button onclick="switchTab('tdee')" id="btn-tdee" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">10. TDEE (Gesamtumsatz)</button> <button onclick="switchTab('deficit')" id="btn-deficit" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">11. Kaloriendefizit & Überschuss</button> <button onclick="switchTab('macros')" id="btn-macros" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">12. Makronährstoffe & Protein</button> <button onclick="switchTab('orm')" id="btn-orm" class="w-full text-left px-3 py-2 rounded-xl font-medium text-slate-600 hover:bg-slate-50 transition">13. 1RM Kraftrechner</button> </nav> </div> <!-- SCIENTIFIC FORMULAS CARD --> <div class="bg-slate-900 text-white rounded-3xl p-5 shadow-sm space-y-2"> <h4 class="font-bold text-sm">Wissenschaftliche Formeln</h4> <p class="text-xs text-slate-300 leading-relaxed">
+Alle Rechner basieren auf anerkannten medizinischen Standards wie Mifflin-St. Jeor und WHO-Klassifikationen.
+</p> </div> </aside> <!-- CONTENT PANELS --> <section id="computer" class="lg:col-span-3 space-y-6"> <!-- 1. BMI CALCULATOR WITH CANVAS GAUGE --> <div id="tab-bmi" class="calculator-panel bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b border-slate-100 pb-4"> <h2 class="text-xl font-bold text-slate-900">BMI (Body-Mass-Index) Rechner</h2> <p class="text-sm text-slate-500 mt-1">Überprüfen Sie Ihr Körpergewicht im Verhältnis zu Ihrer Körpergröße unter Berücksichtigung Ihres Alters.</p> </div> <div class="grid grid-cols-1 sm:grid-cols-3 gap-4"> <div> <label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Alter (Jahre)</label> <input type="number" id="bmi-age" value="25" class="w-full bg-slate-50/50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none"> </div> <div> <label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Größe (cm)</label> <input type="number" id="bmi-height" value="175" class="w-full bg-slate-50/50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none"> </div> <div> <label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Gewicht (kg)</label> <input type="number" id="bmi-weight" value="70" class="w-full bg-slate-50/50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none"> </div> </div> <button onclick="calculateBMI()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3.5 px-6 rounded-xl text-sm transition shadow-sm">
+BMI berechnen
+</button> <div class="bg-slate-50/60 rounded-2xl border border-slate-100 p-6 space-y-6"> <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Ihr Ergebnis</span> <div class="flex flex-col md:flex-row items-center justify-between gap-6"> <div class="space-y-1"> <div id="bmi-output" class="text-2xl font-black text-slate-900">BMI = 22.9 kg/m² — Normalgewicht</div> <p id="bmi-desc" class="text-sm text-slate-600">Sie befinden sich im optimalen Normalgewichtsbereich!</p> </div> <!-- Semi-circle Gauge Canvas --> <div class="relative w-40 h-20 overflow-hidden flex items-end justify-center"> <canvas id="bmiCanvas" width="160" height="90" class="absolute bottom-0"></canvas> </div> </div> <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200/60 text-center"> <div class="bg-white p-3 rounded-xl border border-slate-100"> <span class="text-[10px] font-bold text-slate-400 uppercase">Gesunder Bereich</span> <div id="bmi-healthy-range" class="text-xs font-bold text-slate-800 mt-1">56.7 kg – 76.6 kg</div> </div> <div class="bg-white p-3 rounded-xl border border-slate-100"> <span class="text-[10px] font-bold text-slate-400 uppercase">BMI Prime</span> <div id="bmi-prime" class="text-xs font-bold text-slate-800 mt-1">0.91</div> </div> <div class="bg-white p-3 rounded-xl border border-slate-100"> <span class="text-[10px] font-bold text-slate-400 uppercase">Ponderal-Index</span> <div id="bmi-ponderal" class="text-xs font-bold text-slate-800 mt-1">13.1 kg/m³</div> </div> </div> </div> </div> <!-- 2. CALORIE CALCULATOR --> <div id="tab-calorie" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">2. Kalorienrechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-3 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Gewicht (kg)</label><input type="number" id="cal-weight" value="70" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Größe (cm)</label><input type="number" id="cal-height" value="175" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Alter (Jahre)</label><input type="number" id="cal-age" value="25" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculateCalorie()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Kalorien berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="cal-output" class="text-2xl font-black text-emerald-600">2,250 kcal / Tag</div></div> </div> <!-- 3. BODY FAT CALCULATOR --> <div id="tab-bodyfat" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">3. Körperfettrechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-3 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Größe (cm)</label><input type="number" id="bf-height" value="175" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Halsumfang (cm)</label><input type="number" id="bf-neck" value="38" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Taillenumfang (cm)</label><input type="number" id="bf-waist" value="85" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculateBodyFat()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Körperfettanteil berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="bf-output" class="text-2xl font-black text-emerald-600">15.4% Körperfett</div></div> </div> <!-- 4. BMR CALCULATOR --> <div id="tab-bmr" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">4. Grundumsatz (BMR) Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Geschlecht</label><select id="bmr-gender" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"><option value="male">Männlich</option><option value="female">Weiblich</option></select></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Alter (Jahre)</label><input type="number" id="bmr-age" value="25" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Größe (cm)</label><input type="number" id="bmr-height" value="175" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Gewicht (kg)</label><input type="number" id="bmr-weight" value="70" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculateBMR()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Grundumsatz berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="bmr-output" class="text-2xl font-black text-emerald-600">Grundumsatz = 1,650 kcal / Tag</div></div> </div> <!-- 5. IDEAL WEIGHT CALCULATOR --> <div id="tab-ideal" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">5. Idealgewicht Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Größe (cm)</label><input type="number" id="ideal-height" value="175" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Geschlecht</label><select id="ideal-gender" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"><option value="male">Männlich</option><option value="female">Weiblich</option></select></div> </div> <button onclick="calculateIdeal()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Idealgewicht berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="ideal-output" class="text-2xl font-black text-emerald-600">Idealgewicht = 68.5 kg</div></div> </div> <!-- 6. PACE CALCULATOR --> <div id="tab-pace" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">6. Lauf-Pace Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Distanz (km)</label><input type="number" id="pace-dist" value="10" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Zeit (Minuten)</label><input type="number" id="pace-time" value="50" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculatePace()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Pace berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="pace-output" class="text-2xl font-black text-emerald-600">Pace = 5:00 min/km</div></div> </div> <!-- 7. PREGNANCY CALCULATOR --> <div id="tab-pregnancy" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">7. Schwangerschaftsrechner</h2></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Erster Tag der letzten Periode (LMP)</label><input type="date" id="preg-lmp" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <button onclick="calculatePregnancy()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Schwangerschaftswoche berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="preg-output" class="text-lg font-bold text-slate-800">Bitte Datum auswählen</div></div> </div> <!-- 8. CONCEPTION CALCULATOR --> <div id="tab-conception" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">8. Empfängnisrechner</h2></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Geburtstermin</label><input type="date" id="conc-duedate" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <button onclick="calculateConception()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Empfängnisdatum berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="conc-output" class="text-lg font-bold text-slate-800">Bitte Geburtstermin auswählen</div></div> </div> <!-- 9. DUE DATE CALCULATOR --> <div id="tab-duedate" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">9. Geburtstermin-Rechner</h2></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Erster Tag der letzten Periode (LMP)</label><input type="date" id="due-lmp" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <button onclick="calculateDueDate()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Geburtstermin berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="due-output" class="text-2xl font-black text-emerald-600">Bitte Datum auswählen</div></div> </div> <!-- 10. TDEE CALCULATOR --> <div id="tab-tdee" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">10. TDEE (Gesamtenergieumsatz) Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Gewicht (kg)</label><input type="number" id="tdee-weight" value="70" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Aktivitätsniveau</label> <select id="tdee-activity" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"> <option value="1.2">Sitzend (kaum Bewegung)</option> <option value="1.375" selected>Leicht aktiv (1-3 Tage/Woche Sport)</option> <option value="1.55">Moderat aktiv (3-5 Tage/Woche Sport)</option> <option value="1.725">Sehr aktiv (6-7 Tage/Woche Sport)</option> </select> </div> </div> <button onclick="calculateTDEE()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">TDEE berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="tdee-output" class="text-2xl font-black text-emerald-600">TDEE = 2,268 kcal</div></div> </div> <!-- 11. CALORIE DEFICIT & SURPLUS --> <div id="tab-deficit" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">11. Kaloriendefizit & Überschuss Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">TDEE (kcal)</label><input type="number" id="def-tdee" value="2300" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Ziel-Anpassung</label> <select id="def-goal" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"> <option value="-500">Gewichtsverlust (-500 kcal)</option> <option value="300">Muskelaufbau (+300 kcal)</option> </select> </div> </div> <button onclick="calculateDeficit()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Zielkalorien berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="def-output" class="text-2xl font-black text-emerald-600">Ziel = 1,800 kcal</div></div> </div> <!-- 12. MACRONUTRIENTS & PROTEIN --> <div id="tab-macros" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">12. Makronährstoffe & Protein Rechner</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Ziel-Kalorien</label><input type="number" id="mac-cals" value="2200" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Gewicht (kg)</label><input type="number" id="mac-weight" value="70" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculateMacros()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">Makros berechnen</button> <div class="grid grid-cols-3 gap-4 text-center"> <div class="bg-slate-50 p-4 rounded-xl border"><span class="text-xs text-slate-400">Protein</span><div id="macro-protein" class="text-base font-black mt-1">140 g</div></div> <div class="bg-slate-50 p-4 rounded-xl border"><span class="text-xs text-slate-400">Fett</span><div id="macro-fat" class="text-base font-black mt-1">60 g</div></div> <div class="bg-slate-50 p-4 rounded-xl border"><span class="text-xs text-slate-400">Kohlenhydrate</span><div id="macro-carbs" class="text-base font-black mt-1">280 g</div></div> </div> </div> <!-- 13. 1RM FORCE CALCULATOR --> <div id="tab-orm" class="calculator-panel hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 space-y-6"> <div class="border-b pb-4"><h2 class="text-xl font-bold text-slate-900">13. 1RM Kraftrechner (Maximalkraft)</h2></div> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Bewältigtes Gewicht (kg)</label><input type="number" id="orm-weight" value="80" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> <div><label class="block text-[11px] font-bold text-slate-500 uppercase mb-1">Wiederholungen</label><input type="number" id="orm-reps" value="5" class="w-full bg-slate-50 border rounded-xl px-4 py-3 text-sm"></div> </div> <button onclick="calculateORM()" class="w-full bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl text-sm">1RM berechnen</button> <div class="p-6 bg-slate-50 rounded-2xl border text-center"><div id="orm-output" class="text-2xl font-black text-emerald-600">1RM = 93 kg</div></div> </div> </section> </main> <!-- SEO DETAILED GUIDE & ARTICLES SECTION --> <section id="counselor" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full"> <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-100 space-y-8"> <div class="border-b border-slate-100 pb-6"> <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Expertenratgeber</span> <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Gesundheit, Fitness und Ernährung richtig verstehen</h2> <p class="text-sm text-slate-500 mt-2">Detaillierte Hintergrundinformationen zu unseren Rechnern und wie Sie Ihre persönlichen Ziele erreichen.</p> </div> <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- RATGEBER ARTIKEL 1 (Verlinkt zur Markdown-Datei) --> <div class="space-y-3 p-4 bg-slate-50/50 rounded-2xl border border-slate-100 flex flex-col justify-between"> <div class="space-y-2"> <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full uppercase tracking-wider">Neu</span> <h3 class="text-lg font-bold text-slate-800">Fettverbrennung vs. Fettabbau</h3> <p class="text-sm text-slate-600 leading-relaxed">
+Warum die Jagd nach der Fettverbrennungszone oft fehlschlägt und wie langfristiger Fettabbau wissenschaftlich fundiert funktioniert.
+</p> </div> <a href="/ratgeber/fettverbrennung-vs-fettabbau" class="inline-block text-sm font-semibold text-emerald-600 hover:text-emerald-700 transition pt-2">
+Vollständigen Artikel lesen &rarr;
+</a> </div> <div class="space-y-3"> <h3 class="text-lg font-bold text-slate-800">Kalorienbedarf & TDEE</h3> <p class="text-sm text-slate-600 leading-relaxed">
+Ihr täglicher Gesamtenergieaufwand (TDEE) setzt sich aus dem Grundumsatz und der Leistungsumsatz durch Bewegung zusammen. Wer abnehmen möchte, muss dauerhaft in einem leichten Kaloriendefizit bleiben.
+</p> </div> <div class="space-y-3"> <h3 class="text-lg font-bold text-slate-800">Makronährstoffe für den Erfolg</h3> <p class="text-sm text-slate-600 leading-relaxed">
+Proteine, Fette und Kohlenhydrate bilden die Bausteine Ihrer Ernährung. Eine proteinreiche Zufuhr unterstützt den Muskelerhalt beim Abnehmen und fördert den Aufbau im Kraftsport.
+</p> </div> </div> </div> </section> <!-- FOOTER --> <footer id="contact" class="bg-white border-t border-slate-200 mt-12 py-8 text-center text-xs text-slate-500"> <p>&copy; 2026 MeinGesundheitsrechner.de — Alle Rechte vorbehalten.</p> </footer> <!-- JAVASCRIPT LOGIC & CANVAS DRAWING --> <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.calculator-panel').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('aside nav button').forEach(el => {
+                el.classList.remove('bg-emerald-50/80', 'text-emerald-700', 'font-semibold');
+                el.classList.add('text-slate-600');
+            });
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if(activeBtn) {
+                activeBtn.classList.add('bg-emerald-50/80', 'text-emerald-700', 'font-semibold');
+                activeBtn.classList.remove('text-slate-600');
+            }
+        }
+
+        function drawBmiGauge(bmi) {
+            const canvas = document.getElementById('bmiCanvas');
+            if(!canvas) return;
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const cx = 80, cy = 80, r = 60;
+            const segments = [
+                { start: Math.PI, end: Math.PI + Math.PI*0.25, color: '#3b82f6' },
+                { start: Math.PI + Math.PI*0.25, end: Math.PI + Math.PI*0.6, color: '#10b981' },
+                { start: Math.PI + Math.PI*0.6, end: Math.PI + Math.PI*0.85, color: '#f59e0b' },
+                { start: Math.PI + Math.PI*0.85, end: 2*Math.PI, color: '#ef4444' }
+            ];
+
+            segments.forEach(seg => {
+                ctx.beginPath();
+                ctx.arc(cx, cy, r, seg.start, seg.end);
+                ctx.lineWidth = 12;
+                ctx.strokeStyle = seg.color;
+                ctx.stroke();
+            });
+
+            let normalized = (Math.max(10, Math.min(40, bmi)) - 10) / 30;
+            let angle = Math.PI + normalized * Math.PI;
+
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            let nx = cx + (r - 8) * Math.cos(angle);
+            let ny = cy + (r - 8) * Math.sin(angle);
+            ctx.lineTo(nx, ny);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = '#0f172a';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(cx, cy, 4, 0, 2*Math.PI);
+            ctx.fillStyle = '#0f172a';
+            ctx.fill();
+        }
+
+        function calculateBMI() {
+            const hCm = parseFloat(document.getElementById('bmi-height').value);
+            const wKg = parseFloat(document.getElementById('bmi-weight').value);
+            const hM = hCm / 100;
+            const bmi = wKg / (hM * hM);
+
+            let category = "Normalgewicht";
+            let desc = "Sie befinden sich im optimalen Normalgewichtsbereich!";
+            if (bmi < 18.5) { category = "Untergewicht"; desc = "Sie liegen unter dem optimalen Gewichtsbereich."; }
+            else if (bmi >= 25 && bmi < 30) { category = "Übergewicht"; desc = "Sie befinden sich leicht über dem gesunden Bereich."; }
+            else if (bmi >= 30) { category = "Adipositas (Fettleibigkeit)"; desc = "Ihr BMI liegt im adipösen Bereich."; }
+
+            document.getElementById('bmi-output').innerText = `BMI = ${bmi.toFixed(1)} kg/m² — ${category}`;
+            document.getElementById('bmi-desc').innerText = desc;
+
+            const lowWeight = (18.5 * hM * hM).toFixed(1);
+            const highWeight = (24.9 * hM * hM).toFixed(1);
+            document.getElementById('bmi-healthy-range').innerText = `${lowWeight} kg – ${highWeight} kg`;
+
+            document.getElementById('bmi-prime').innerText = (bmi / 25).toFixed(2);
+            document.getElementById('bmi-ponderal').innerText = (wKg / (Math.pow(hM, 3))).toFixed(1) + ' kg/m³';
+
+            drawBmiGauge(bmi);
+        }
+
+        function calculateCalorie() {
+            const w = parseFloat(document.getElementById('cal-weight').value);
+            const h = parseFloat(document.getElementById('cal-height').value);
+            const a = parseFloat(document.getElementById('cal-age').value);
+            const cals = Math.round(((10 * w) + (6.25 * h) - (5 * a) + 5) * 1.375);
+            document.getElementById('cal-output').innerText = cals.toLocaleString() + ' kcal / Tag';
+        }
+
+        function calculateBodyFat() {
+            const h = parseFloat(document.getElementById('bf-height').value);
+            const n = parseFloat(document.getElementById('bf-neck').value);
+            const w = parseFloat(document.getElementById('bf-waist').value);
+            const bf = 495 / (1.0324 - 0.19077 * Math.log10(w - n) + 0.15456 * Math.log10(h)) - 450;
+            document.getElementById('bf-output').innerText = Math.max(5, bf).toFixed(1) + '% Körperfett';
+        }
+
+        function calculateBMR() {
+            const g = document.getElementById('bmr-gender').value;
+            const a = parseFloat(document.getElementById('bmr-age').value);
+            const h = parseFloat(document.getElementById('bmr-height').value);
+            const w = parseFloat(document.getElementById('bmr-weight').value);
+            let bmr = (10 * w) + (6.25 * h) - (5 * a) + (g === 'male' ? 5 : -161);
+            document.getElementById('bmr-output').innerText = `Grundumsatz = ${Math.round(bmr).toLocaleString()} kcal / Tag`;
+        }
+
+        function calculateIdeal() {
+            const h = parseFloat(document.getElementById('ideal-height').value);
+            const g = document.getElementById('ideal-gender').value;
+            const ideal = g === 'male' ? (h - 100) * 0.9 : (h - 100) * 0.85;
+            document.getElementById('ideal-output').innerText = `Idealgewicht = ${ideal.toFixed(1)} kg`;
+        }
+
+        function calculatePace() {
+            const d = parseFloat(document.getElementById('pace-dist').value);
+            const t = parseFloat(document.getElementById('pace-time').value);
+            const paceMin = Math.floor(t / d);
+            const paceSec = Math.round(((t / d) - paceMin) * 60);
+            document.getElementById('pace-output').innerText = `Pace = ${paceMin}:${paceSec < 10 ? '0' : ''}${paceSec} min/km`;
+        }
+
+        function calculatePregnancy() {
+            const lmpInput = document.getElementById('preg-lmp').value;
+            if(!lmpInput) { document.getElementById('preg-output').innerText = 'Bitte wählen Sie ein Datum aus.'; return; }
+            const lmp = new Date(lmpInput);
+            const today = new Date();
+            const diffDays = Math.floor((today - lmp) / (1000 * 60 * 60 * 24));
+            const weeks = Math.floor(diffDays / 7);
+            const days = diffDays % 7;
+            document.getElementById('preg-output').innerText = `Schwangerschaftswoche: ${weeks}. Woche und ${days} Tage`;
+        }
+
+        function calculateConception() {
+            const dueInput = document.getElementById('conc-duedate').value;
+            if(!dueInput) { document.getElementById('conc-output').innerText = 'Bitte wählen Sie einen Geburtstermin aus.'; return; }
+            const due = new Date(dueInput);
+            due.setDate(due.getDate() - 266);
+            document.getElementById('conc-output').innerText = `Empfängnisdatum: ${due.toLocaleDateString('de-DE')}`;
+        }
+
+        function calculateDueDate() {
+            const lmpInput = document.getElementById('due-lmp').value;
+            if(!lmpInput) { document.getElementById('due-output').innerText = 'Bitte wählen Sie ein Datum aus.'; return; }
+            const lmp = new Date(lmpInput);
+            lmp.setDate(lmp.getDate() + 280);
+            document.getElementById('due-output').innerText = `Geburtstermin: ${lmp.toLocaleDateString('de-DE')}`;
+        }
+
+        function calculateTDEE() {
+            const w = parseFloat(document.getElementById('tdee-weight').value);
+            const m = parseFloat(document.getElementById('tdee-activity').value);
+            document.getElementById('tdee-output').innerText = `TDEE = ${Math.round((10 * w + 625 - 125) * m).toLocaleString()} kcal`;
+        }
+
+        function calculateDeficit() {
+            const tdee = parseFloat(document.getElementById('def-tdee').value);
+            const adj = parseInt(document.getElementById('def-goal').value);
+            document.getElementById('def-output').innerText = `Ziel = ${(tdee + adj).toLocaleString()} kcal`;
+        }
+
+        function calculateMacros() {
+            const cals = parseFloat(document.getElementById('mac-cals').value);
+            const w = parseFloat(document.getElementById('mac-weight').value);
+            const p = Math.round(w * 2.0);
+            const f = Math.round((cals * 0.25) / 9);
+            const cb = Math.max(0, Math.round((cals - (p * 4 + f * 9)) / 4));
+            document.getElementById('macro-protein').innerText = p + ' g';
+            document.getElementById('macro-fat').innerText = f + ' g';
+            document.getElementById('macro-carbs').innerText = cb + ' g';
+        }
+
+        function calculateORM() {
+            const w = parseFloat(document.getElementById('orm-weight').value);
+            const r = parseFloat(document.getElementById('orm-reps').value);
+            const orm = r === 1 ? w : w * (1 + r / 30);
+            document.getElementById('orm-output').innerText = `1RM = ${Math.round(orm)} kg`;
+        }
+
+        window.onload = () => { calculateBMI(); };
+    </script> </div>  </body></html>
